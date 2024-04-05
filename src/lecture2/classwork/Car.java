@@ -1,4 +1,4 @@
-package lecture2.Classwork;
+package lecture2.classwork;
 
 public class Car {
     private String model;

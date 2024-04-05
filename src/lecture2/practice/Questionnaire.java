@@ -1,4 +1,4 @@
-package lecture2.Classwork;
+package lecture2.practice;
 
 public class Questionnaire {
     public static void main(String[] args) {
