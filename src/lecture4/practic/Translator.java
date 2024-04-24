@@ -13,7 +13,7 @@ public class Translator {
             String word = sc.next();
             String answer;
 
-            String continuum = "Перекласти еще одне слово? (Так/Ні)";
+            String continuum = "Перекласти ще одне слово? (Так/Ні)";
 
             switch (word) {
                 case "Сонячно":
