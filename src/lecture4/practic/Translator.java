@@ -76,6 +76,7 @@ public class Translator {
                     continue;
                 case "Ні":
                     exit = true;
+                    break;
             }
         }
     }
