@@ -9,72 +9,61 @@ public class Translator {
         Scanner sc = new Scanner(System.in);
         String word;
         String answer;
-        String continuum = "Перекласти ще одне слово? (Так/Ні) ";
+        final String continuum = "Перекласти ще одне слово? (Так/Ні) ";
 
         while (!exit){
             System.out.print("Введить слово: ");
-            word = sc.next();
+            word = sc.next().toLowerCase();
 
             switch (word) {
-                case "Сонячно":
-                    System.out.println(word + " перекладаеться як Sunny");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "сонячно":
+                    System.out.print(word + " перекладаеться як Sunny\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Дощ":
-                    System.out.println(word + " перекладаеться як Rain");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "дощ":
+                    System.out.print(word + " перекладаеться як Rain\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Сніг":
-                    System.out.println(word + " перекладаеться як Snow");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "сніг":
+                    System.out.print(word + " перекладаеться як Snow\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Хмарно":
-                    System.out.println(word + " перекладаеться як Cloudy");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "хмарно":
+                    System.out.print(word + " перекладаеться як Cloudy\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Вітряно":
-                    System.out.println(word + " перекладаеться як Windy");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "вітряно":
+                    System.out.print(word + " перекладаеться як Windy\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Гроза":
-                    System.out.println(word + " перекладаеться як Thunderstorm");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "гроза":
+                    System.out.print(word + " перекладаеться як Thunderstorm\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Торнадо":
-                    System.out.println(word + " перекладаеться як Tornado");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "торнадо":
+                    System.out.print(word + " перекладаеться як Tornado\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Ураган":
-                    System.out.println(word + " перекладаеться як Hurricane");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "ураган":
+                    System.out.print(word + " перекладаеться як Hurricane\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Туман":
-                    System.out.println(word + " перекладаеться як Fog");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "туман":
+                    System.out.print(word + " перекладаеться як Fog\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
-                case "Злива":
-                    System.out.println(word + " перекладаеться як Downpour");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                case "злива":
+                    System.out.print(word + " перекладаеться як Downpour\n" + continuum);
+                    answer = sc.next().toLowerCase();
                     break;
                 default:
-                    System.out.println("Такого слова немає в нашому словнику");
-                    System.out.print(continuum);
-                    answer = sc.next();
+                    System.out.print("Такого слова немає в нашому словнику\n" + continuum);
+                    answer = sc.next().toLowerCase();
             }
             switch (answer){
-                case "Так":
+                case "так":
                     continue;
-                case "Ні":
+                case "ні":
                     exit = true;
                     break;
             }
