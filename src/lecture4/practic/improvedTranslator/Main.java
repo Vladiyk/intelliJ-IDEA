@@ -8,7 +8,7 @@ public class Main {
         boolean exit = false;
         String word;
         final String continuum = "Перекласти ще одне слово? (Так/Ні) ";
-
+        
         while (!exit) {
             System.out.print("Введить слово: ");
             word = sc.next().toLowerCase();
