@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class Translator {
     public static String answer;
-    public static String translation(String word, String continuum){
-        String ans = null;
-        Scanner sc = new Scanner(System.in);
-        String YELLOW = "\u001B[33m";
+    public static String translation(String word, String continuum){ // your method must do just one action, delete 'continuum'
+        String ans = null; // change name
+        Scanner sc = new Scanner(System.in); // class Scanner mustn't be here!
+        String YELLOW = "\u001B[33m"; // take this objects from your interface 
         String RESET = "\u001B[0m";
 
         switch (word) {
